@@ -1,4 +1,4 @@
-# Toolbox Mister Death
+# Toolbox by Mister Death
 
 Toolbox simples para técnicos de TI com várias funções úteis como ver IP público, ping, scan de portas, whois, monitoramento de rede, geração de senhas etc.
 
