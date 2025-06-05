@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdlib>  
+#include <cstdlib>
 #include <string>
 #include <limits>
 
@@ -7,17 +7,13 @@ using namespace std;
 
 const string vermelho = "\033[91m";
 const string verde = "\033[92m";
-const string amarelo = "\033[93m";
 const string azul = "\033[94m";
-const string magenta = "\033[95m";
-const string cyan = "\033[96m";
-const string branco = "\033[97m";
 const string reset = "\033[0m";
 
 void banner() {
     system("clear");
-    cout << cyan <<
-R"(___________  ______________________________
+    cout << azul <<
+R"BANNER(___________  ______________________________
       .'           .'                              .'
    .'           .'                              .'  |
 .'___________.'______________________________.'     |
@@ -35,8 +31,7 @@ R"(___________  ______________________________
 ''----------'''-----------------------------''
             (o)LGB                        (o)
 
-" << verde << "Toolbox" << endl;
-    cout << magenta << "Software desenvolvido por Mister Death" << reset << endl << endl;
+)BANNER" << reset << endl;
 }
 
 void menu() {
@@ -57,14 +52,13 @@ void menu() {
 }
 
 int main() {
-    string escolha;
-    string alvo, dom, ip;
+    string escolha, alvo, dom, ip;
 
     while (true) {
         banner();
         menu();
 
-        cout << branco << "Escolha uma opção: " << reset;
+        cout << "Escolha uma opção: ";
         getline(cin, escolha);
 
         if (escolha == "1") {
@@ -100,7 +94,7 @@ int main() {
             system("df -h");
         }
         else if (escolha == "9") {
-            system("ps aux");
+            system("top");
         }
         else if (escolha == "10") {
             system("speedtest-cli");
@@ -117,8 +111,8 @@ int main() {
         }
 
         cout << "\nPressione ENTER para continuar...";
-        cin.get();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     return 0;
-        }
+}
