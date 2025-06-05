@@ -10,8 +10,8 @@ g++ Toolbox.cpp -o toolbox
 # Compilar V0.17
 git clone https://github.com/MisterBlackOFC/Toolbox
 cd Toolbox
-g++ Toolbox_0.17.cpp -o Toolbox
-./Toolbox
+g++ Toolbox_0.17.cpp -o Toolbox0.17
+./Toolbox.017
 
 
 ## Funcionalidades
