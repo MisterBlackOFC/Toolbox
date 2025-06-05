@@ -3,9 +3,9 @@
 Toolbox simples para técnicos de TI com várias funções úteis como ver IP público, ping, scan de portas, whois, monitoramento de rede, geração de senhas etc.
 
 # Compilar V0.1
-g++ toolbox.cpp -o toolbox
+g++ Toolbox.cpp -o toolbox
 # Compilar V0.17
-g++ toolbox.0.17.cpp -o toolbox
+g++ Toolbox_0.17.cpp -o toolbox
 
 ## Funcionalidades
 
