@@ -2,10 +2,17 @@
 
 Toolbox simples para técnicos de TI com várias funções úteis como ver IP público, ping, scan de portas, whois, monitoramento de rede, geração de senhas etc.
 
-# Compilar V0.1
+# Instalar V0.1
+git clone https://github.com/MisterBlackOFC/Toolbox
+cd Toolbox
 g++ Toolbox.cpp -o toolbox
+./toolbox
 # Compilar V0.17
-g++ Toolbox_0.17.cpp -o toolbox
+git clone https://github.com/MisterBlackOFC/Toolbox
+cd Toolbox
+g++ Toolbox_0.17.cpp -o Toolbox
+./Toolbox
+
 
 ## Funcionalidades
 
