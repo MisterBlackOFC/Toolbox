@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>  
 #include <string>
+#include <limits>
 
 using namespace std;
 
@@ -57,7 +58,7 @@ void menu() {
 
 int main() {
     string escolha;
-    string alvo, dom, ip, pasta, nome;
+    string alvo, dom, ip;
 
     while (true) {
         banner();
@@ -99,7 +100,7 @@ int main() {
             system("df -h");
         }
         else if (escolha == "9") {
-            system("top");
+            system("ps aux");
         }
         else if (escolha == "10") {
             system("speedtest-cli");
@@ -116,8 +117,8 @@ int main() {
         }
 
         cout << "\nPressione ENTER para continuar...";
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin.get();
     }
 
     return 0;
-      }
+        }
